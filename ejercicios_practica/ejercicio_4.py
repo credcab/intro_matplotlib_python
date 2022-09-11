@@ -53,5 +53,29 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+    figura = plt.figure()
+    figura.suptitle('varias funciones', fontsize=11)
+    ax1 = figura.add_subplot(2, 2, 1)
+    ax2 = figura.add_subplot(2, 2, 2)
+    ax3 = figura.add_subplot(2, 2, 3)
+    ax4 = figura.add_subplot(2, 2, 4)
+
+    ax1.plot(x, y1, c='lightcoral', label='F cuadrática')
+    ax1.legend()
+    ax1.grid()
+
+    ax2.plot(x, y2, c='khaki', label='F cúbica')
+    ax2.legend()
+    ax2.grid()
+
+    ax3.plot(x, y3, c='teal', label='F cuárticas')
+    ax3.legend()
+    ax3.grid()
+
+    ax4.plot(x, y4, c='mediumturquoise', label='F raíz cuadrada')
+    ax4.legend()
+    ax4.grid()
+    
+    plt.show()
 
     print("terminamos")

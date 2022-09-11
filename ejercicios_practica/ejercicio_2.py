@@ -45,5 +45,15 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    figura = plt.figure()
+    figura.suptitle('funciones', fontsize=22)
+    ax = figura.add_subplot()
+
+    ax.plot(x, y1, label='función cuadrática', c='lime')
+    ax.plot(x, y2, label='función cúbica', c='lightsalmon')
+    ax.legend()
+    ax.grid()
+    plt.show()
+
 
     print("terminamos")

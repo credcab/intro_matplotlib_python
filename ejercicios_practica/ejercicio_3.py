@@ -33,5 +33,13 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    figura = plt.figure()
+    figura.suptitle('gráfico de tan hiperbólica', fontsize=22)
+    ax = figura.add_subplot()
+
+    ax.scatter(x, y, c='darkviolet', label='gráfico con puntos', marker='*')
+    ax.legend()
+    ax.grid()
+    plt.show()
 
     print("terminamos")
